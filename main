@@ -1,0 +1,14 @@
+import random
+import numpy as np
+
+n = int(input('enter no. upto which you want random 3*3 grid :-'))
+ar=[]
+for i in range(9):
+    i=0
+    x = random.randrange(0,n)
+    ar.insert(i,x)
+    i=i+1
+
+
+grid = np.array([ar]).reshape(3,3)
+print(grid)
